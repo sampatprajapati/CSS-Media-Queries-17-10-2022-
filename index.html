@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>css Media Queries</title>
+        <link rel="stylesheet" href="./css/main.css" />
+        <style>
+            @font-face {
+                font-family: "myfonts";
+                src: url("./fonts/a.otf") format("opentype");
+            }
+            @font-face {
+                font-family: "sfonts";
+                src: url("./fonts/b.ttf") format("truetype");
+            }
+            @font-face {
+                font-family: "s2fonts";
+                src: url("./fonts/c.ttf") format("truetype");
+            }
+            /*this are breakpoints in a responsive website.
+            and this is the Extra Small (xs)Resolution.*/
+            @media only screen and (min-width: 0px) and (max-width: 575px) {
+                .a {
+                    width: 200px;
+                    height: 200px;
+                    background: red;
+                    border: 5px solid black;
+                    margin: 50px auto;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 3em;
+                    font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                        "Trebuchet MS", sans-serif;
+                }
+            }
+            /* this is second breakpoint. its called Small (sm) Resolution*/
+            @media only screen and (min-width: 576px) and (max-width: 767px) {
+                .a {
+                    width: 400px;
+                    height: 400px;
+                    background: green;
+                    border: 10px outset yellow;
+                    margin: 50px auto;
+                    text-align: center;
+                    line-height: 200px;
+                    font-size: 4em;
+                    font-family: "myfoonts", cursive;
+                    border-radius: 400px;
+                }
+            }
+            /*this is third breakpoint. and it is Medium(md) Resolution*/
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .a {
+                    width: 600px;
+                    height: 350px;
+                    background: maroon;
+                    border: 15px dotted black;
+                    margin: 50px auto;
+                    text-align: center;
+                    line-height: 300px;
+                    font-size: 6em;
+                    font-family: "sfonts", cursive;
+                }
+            }
+            /* this is fourth breakpoint. It is Large(lg) Resolution*/
+            @media only screen and (min-width: 992px) and (max-width: 1200px) {
+                .a {
+                    width: 600px;
+                    height: 600px;
+                    background: purple;
+                    border: 15px dotted black;
+                    margin: 50px auto;
+                    text-align: center;
+                    line-height: 300px;
+                    font-size: 5em;
+                    font-family: "s2fonts", cursive;
+                    border-radius: 200px;
+                }
+            }
+            /* this is fifth breakpoint. It is  Extra Large(xl) Resolution.
+            the min and max range of this  is according to my assumption.*/
+            @media only screen and (min-width: 1201px) and (max-width: 1300px) {
+                .a {
+                    width: 300px;
+                    height: 300px;
+                    background: rgb(0, 119, 128);
+                    border: 15px dashed black;
+                    text-align: center;
+                    line-height: 120px;
+                    font-size: 2em;
+                    font-family: "s2fonts", cursive;
+                    display: inline-block;
+                }
+                .b {
+                    width: 300px;
+                    height: 300px;
+                    background: rgb(28, 128, 0);
+                    border: 15px dotted black;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 2em;
+                    font-family: "s2fonts", cursive;
+                    display: inline-block;
+                }
+                .c {
+                    width: 300px;
+                    height: 300px;
+                    background: rgb(58, 0, 128);
+                    border: 15px double black;
+                    text-align: center;
+                    line-height: 120px;
+                    font-size: 2em;
+                    font-family: "s2fonts", cursive;
+                    display: inline-block;
+                }
+                .d {
+                    width: 400px;
+                    height: 400px;
+                    background: rgb(207, 46, 21);
+                    border: 15px dotted black;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 3em;
+                    margin: 100px auto;
+                    font-family: "s2fonts", cursive;
+                }
+            }
+            /* this is sixth breakpoint. It is  Extra Extra Large(xxl) Resolution.
+            the range of this is also defined by me.*/
+            @media only screen and (min-width: 1301px) and (max-width: 1400px) {
+                .a {
+                    width: 300px;
+                    height: 300px;
+                    background: rgb(0, 119, 128);
+                    border: 15px dashed black;
+                    text-align: center;
+                    line-height: 120px;
+                    font-size: 2em;
+                    font-family: "s2fonts", cursive;
+                    display: inline-block;
+                    animation: xyz 2s linear 0.5s infinite;
+                }
+                .b {
+                    width: 300px;
+                    height: 300px;
+                    background: rgb(28, 128, 0);
+                    border: 15px dotted black;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 2em;
+                    font-family: "s2fonts", cursive;
+                    display: inline-block;
+                    animation: xyz 2s linear 0.9s infinite;
+                }
+                .c {
+                    width: 300px;
+                    height: 300px;
+                    background: rgb(58, 0, 128);
+                    border: 15px double black;
+                    text-align: center;
+                    line-height: 120px;
+                    font-size: 2em;
+                    font-family: "s2fonts", cursive;
+                    display: inline-block;
+                    animation: xyz 2s linear 1s infinite;
+                }
+                .d {
+                    width: 400px;
+                    height: 400px;
+                    background: rgb(207, 46, 21);
+                    border: 15px dotted black;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 3em;
+                    margin: 100px auto;
+                    font-family: "s2fonts", cursive;
+                    animation: xyz 2s linear 1s infinite;
+                    /*display: inline-block;*/
+                }
+                @keyframes xyz {
+                    from {
+                        transform: rotate(odeg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a">"Hello Everyone"</div>
+        <div class="b">"Learn Something New"</div>
+        <div class="c">"Keep Improving"</div>
+        <div class="d">"Don't Repeat Yourself"</div>
+    </body>
+</html>
